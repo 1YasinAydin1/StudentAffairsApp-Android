@@ -1,2 +1,0 @@
-# android-test
-test

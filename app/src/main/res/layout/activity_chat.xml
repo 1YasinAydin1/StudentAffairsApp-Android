@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color3"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChatActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/ChatAppbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ChatToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingStart="20dp"
+            android:paddingBottom="5dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ChatProfileUserCircleImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/ic_launcher" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/chatProfileUserName"
+                    android:text="Kullanıcı Adı"
+                    android:paddingStart="12dp"
+                    android:fontFamily="@font/biryani_semibold"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/color6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/ChatAppbarLayout"
+        android:layout_above="@+id/ChatRelativeLayout"
+        android:background="@color/color3"
+        android:id="@+id/ChatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ChatRelativeLayout"
+        android:background="@drawable/custom_input"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/ChatMessageEditText"
+            android:hint="Mesaj Yaz ..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxHeight="100dp"
+            android:layout_marginStart="20dp"
+            android:background="@android:color/transparent"
+            android:paddingLeft="20dp"
+            android:paddingVertical="10dp"
+            android:paddingRight="70dp" />
+        <ImageButton
+            android:id="@+id/ChatSendImageButton"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/custom_button1"
+            android:src="@drawable/ic_send"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+</RelativeLayout>

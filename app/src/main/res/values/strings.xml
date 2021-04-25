@@ -1,0 +1,227 @@
+<resources>
+    <string name="app_name">adimadimproje</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="OrderBy">
+        <item>Sırala</item>
+        <item>En Düşük Fiyat</item>
+        <item>En Yüksek Fiyat</item>
+        <item>En Yeniler</item>
+    </string-array>
+    <string-array name="list">
+        <item>Kategori Seçiniz</item>
+        <item>Emlak</item>
+        <item>Araç</item>
+        <item>Ev Eşyası ve Spot</item>
+        <item>Elektronik</item>
+        <item>Film,Kitap ve Müzik</item>
+        <item>Ders araç, gereç ve ilgili</item>
+        <item>Giyim ve Aksesuar</item>
+        <item>İş İlanı</item>
+    </string-array>
+    <string-array name="EmlakKimden">
+        <item>Kimden</item>
+        <item>Sahibinden</item>
+        <item>Emlak Ofisinden</item>
+    </string-array>
+    <string-array name="EmlakDurum">
+        <item>Durum</item>
+        <item>Satılık</item>
+        <item>Kiralık</item>
+    </string-array>
+    <string-array name="EmlakMetreKare">
+        <item>m²</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>65</item>
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+        <item>85</item>
+        <item>90</item>
+        <item>95</item>
+        <item>100</item>
+        <item>105</item>
+        <item>110</item>
+        <item>115</item>
+        <item>120</item>
+        <item>125</item>
+        <item>130</item>
+        <item>135</item>
+        <item>140</item>
+        <item>145</item>
+        <item>150</item>
+    </string-array>
+
+    <string-array name="AracKimden">
+        <item>Kimden</item>
+        <item>Sahibinden</item>
+        <item>Galeriden</item>
+    </string-array>
+    <string-array name="AracDurum">
+        <item>Durum</item>
+        <item>Satılık</item>
+        <item>Kiralık</item>
+    </string-array>
+    <string-array name="AracModel">
+        <item>Araç Tipi</item>
+        <item>Arazi, SUV, Pickup</item>
+        <item>Motosiklet </item>
+        <item>Minivan , Panelvan</item>
+        <item>Ticari Araçlar</item>
+        <item>Kiralık Araçlar</item>
+        <item>Deniz Araçları</item>
+        <item>Hasarlı Araçlar </item>
+        <item>Klasik Araçlar</item>
+        <item>Elektrikli Araçlar</item>
+        <item>Modifiye Araçlar</item>
+        <item>Hava Araçları </item>
+        <item>ATV  </item>
+        <item>UTV</item>
+        <item>Karavan</item>
+        <item>Engelli Plakalı Araçlar</item>
+    </string-array>
+
+    <string-array name="EvEşyasıKimden">
+        <item>Kimden</item>
+        <item>Sahibinden</item>
+        <item>Spot Dükkanından</item>
+    </string-array>
+    <string-array name="EsyaDurum">
+        <item>Durum</item>
+        <item>Satılık</item>
+        <item>Kiralık</item>
+    </string-array>
+    <string-array name="EsyaTur">
+        <item>Eşya Türü</item>
+        <item>Koltuk </item>
+        <item>Fırın </item>
+        <item>Masa</item>
+        <item>Tencere</item>
+        <item>Küçük Ev Aletleri</item>
+        <item>Servis Malzemeleri </item>
+        <item>Ayna </item>
+        <item>Halı</item>
+        <item>Yatak</item>
+        <item>Yastık</item>
+        <item>Demlik</item>
+        <item>Kahve Makinesi</item>
+
+    </string-array>
+
+    <string-array name="ElektronikKimden">
+        <item>Kimden</item>
+        <item>Sahibinden</item>
+        <item>Spot Dükkanından</item>
+    </string-array>
+    <string-array name="ElektronikDurum">
+        <item>Durum</item>
+        <item>Satılık</item>
+        <item>Kiralık</item>
+    </string-array>
+    <string-array name="ElektronikTur">
+        <item>Elektronik Eşya Türü</item>
+        <item>Buzdolabı</item>
+        <item>Çamasır Makinesi</item>
+        <item>Bulaşık Makinesi</item>
+        <item>Kurutma Makinesi</item>
+        <item>Fırın </item>
+        <item>Küçük Ev Aletleri</item>
+        <item>Matkap </item>
+        <item>Şarjlı Testere</item>
+        <item>Wi-fi Çoklayıcı</item>
+        <item>Telefon</item>
+        <item>Laptop Şarj Adaptör</item>
+        <item>Laptop</item>
+        <item>Elektrikli Scooter</item>
+        <item>Projeksiyon Cihazı</item>
+    </string-array>
+
+    <string-array name="EglenceKimden">
+        <item>Kimden</item>
+        <item>Sahibinden</item>
+        <item>Spotçudan</item>
+    </string-array>
+    <string-array name="EglenceDurum">
+        <item>Durum</item>
+        <item>Sıfır Satılık</item>
+        <item>İkinci El Satılık</item>
+        <item>Kiralık</item>
+    </string-array>
+    <string-array name="EglenceTur">
+        <item>Ev Oyunları</item>
+        <item>Kart Oyunları</item>
+        <item>Dijital Oyunlar</item>
+        <item>Filmler</item>
+        <item>Müzik Albümleri</item>
+        <item>Kitap</item>
+    </string-array>
+
+    <string-array name="EgitimKimden">
+        <item>Kimden</item>
+        <item>Sahibinden</item>
+        <item>Kırtasiye</item>
+    </string-array>
+    <string-array name="EgitimDurum">
+        <item>Durum</item>
+        <item>Satılık</item>
+        <item>Kiralık</item>
+    </string-array>
+    <string-array name="EgitimTur">
+        <item>Çizim Takımları</item>
+        <item>Atölye Önlükleri</item>
+        <item>Maket Kartonları</item>
+        <item>Ders Kitapları</item>
+        <item>Okul Çantaları</item>
+        <item>Test Kitapları</item>
+    </string-array>
+
+    <string-array name="GiyimKusamKimden">
+        <item>Kimden</item>
+        <item>Sahibinden</item>
+        <item>Mağazadan</item>
+    </string-array>
+    <string-array name="GiyimKusamDurum">
+        <item>Durum</item>
+        <item>Satılık</item>
+        <item>Kiralık</item>
+    </string-array>
+    <string-array name="GiyimKusamTur">
+        <item>Gelinlik</item>
+        <item>Abiye</item>
+        <item>Mont/Kaban</item>
+        <item>Ayakkabı</item>
+        <item>Ev Kıyafetleri</item>
+        <item>Çocuk Kıyafetleri</item>
+        <item>Takım Elbiseler</item>
+        <item>Türban Özel</item>
+    </string-array>
+
+    <string-array name="IsIlanKimden">
+        <item>Kimden</item>
+        <item>İş veren</item>
+        <item>Aracı Firma</item>
+    </string-array>
+    <string-array name="IsIlanDurum">
+        <item>Durum</item>
+        <item>Aktif</item>
+        <item>Pasif</item>
+    </string-array>
+    <string-array name="IsIlanKimdenTur">
+        <item>Çalışma Tipi</item>
+        <item>Tam zamanlı</item>
+        <item>Vardiyalı</item>
+        <item>Stajyer</item>
+        <item>Home Office</item>
+    </string-array>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

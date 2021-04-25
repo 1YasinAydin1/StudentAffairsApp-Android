@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ProfileAppBar"
+        android:background="?android:attr/windowBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ProfileToolBar"
+            android:background="#fdfdfd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ProfileUserName"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:text="Kullanıcı Adı"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkgray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageButton
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ProfileLocationImageButton"
+
+                    android:layout_toStartOf="@+id/ProfileSettings"
+                    android:background="@android:color/transparent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageButton
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ProfileSettings"
+                    android:src="@drawable/ic_triline"
+                    android:layout_alignParentEnd="true"
+                    android:background="@android:color/transparent"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.proje.adimadimproje.CustomScrollView
+        android:layout_below="@+id/ProfileAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/TopBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginBottom="20dp">
+                        <ImageView
+
+                            android:id="@+id/ProfileBackGroundImageView"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"/>
+                        <ImageButton
+                            android:id="@+id/ProfileFollowButton"
+                            android:layout_toStartOf="@+id/ProfileCircleIV"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/custom_profile_action_button"
+                            android:padding="15dp"
+                            android:src="@drawable/ic_follow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <ImageButton
+                            android:id="@+id/ProfileMessageButton"
+                            android:layout_toEndOf="@+id/ProfileCircleIV"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/custom_profile_action_button"
+                            android:padding="15dp"
+                            android:src="@drawable/ic_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/ProfileCircleIV"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_margin="15dp"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="@color/logoColor"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_marginEnd="30dp"
+                            android:layout_toStartOf="@+id/centerInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Gönderi"
+                                android:textColor="@color/darkgray"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/ProfilePostCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Gönderi" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/centerInfo"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="40dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Takipçi"
+                                android:textColor="@color/darkgray"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/ProfileFollowerCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Takipçi" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rightInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/centerInfo"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Takip"
+                                android:textColor="@color/darkgray"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/ProfileFollowedCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Takip" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/CenterBar"
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/ProfileUserName2"
+                        android:text="Kullanıcı Adı"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/ProfileUserName2"
+                        android:id="@+id/ProfileUserNameLastName"
+                        android:text="Ad Soyad"
+                        android:textStyle="italic"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                   <LinearLayout
+                       android:layout_alignParentBottom="true"
+                       android:layout_alignParentRight="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent">
+                       <TextView
+                           android:id="@+id/ProfileSwapTextView"
+                           android:layout_gravity="center_vertical"
+                           android:text="Kişisel Hesap"
+                           android:textSize="11sp"
+                           android:layout_marginEnd="10dp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+                       <ImageView
+                           android:id="@+id/ProfilePostSwap"
+                           android:src="@drawable/ic_replace"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+                   </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ProfilePostTabLayout"
+                android:background="@color/white"
+                android:minHeight="?attr/actionBarSize"
+                app:tabMode="fixed"/>
+                <com.proje.adimadimproje.WrapContentHeightViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ProfilePostpager" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:paddingTop="10dp"
+                app:tabTextColor="?android:textColorSecondary"
+                app:tabSelectedTextColor="@color/color11"
+                app:tabTextAppearance="@style/MyCustomTabText"
+                android:layout_height="wrap_content"
+                android:id="@+id/SalesPostTabLayout"
+                android:background="@color/white"
+                android:minHeight="?attr/actionBarSize"
+                app:tabMode="fixed"/>
+
+            <com.proje.adimadimproje.WrapContentHeightViewPager
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SalesPostpager" />
+
+        </LinearLayout>
+    </com.proje.adimadimproje.CustomScrollView>
+
+</RelativeLayout>

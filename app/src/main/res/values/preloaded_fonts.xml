@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+
+        <item>@font/arima_madurai_medium</item>
+        <item>@font/biryani</item>
+        <item>@font/biryani_extralight</item>
+        <item>@font/biryani_light</item>
+        <item>@font/biryani_semibold</item>
+    </array>
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfileEditActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/ChathAppbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/SearchToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ProfileEditClosed"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_toStartOf="@+id/chatProfileUserName"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/CircleImageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_edit" />
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/chatProfileUserName"
+                    android:text="Profil Düzenleme"
+                    android:paddingStart="12dp"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/ProfileEditEnter"
+                    android:text="Kaydet"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple_500"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/ProfileEditRelativeLayout"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:id="@+id/ProfileEditBackGroundImageView"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="250dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:scaleType="centerCrop" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/ProfileEditCircleImageView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+
+                    android:layout_gravity="center"
+                    android:layout_margin="30dp"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_below="@+id/ProfileEditRelativeLayout"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ProfileImageEditTextView"
+                android:text="Profil Fotoğrafı Düzenle"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_below="@+id/ProfileImageEditTextView"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ProfileBackGroundEditTextView"
+                android:text="Profil Arka Plan Fotoğrafı Düzenle"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_below="@+id/ProfileBackGroundEditTextView"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ProfileEditNameLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="25dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/custom_person_icon"
+                android:drawablePadding="12dp"
+                android:hint="Ad Soyad"
+                android:inputType="text"
+                android:padding="12dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColorHint="@color/darkgray" />
+            <EditText
+                android:layout_below="@+id/ProfileEditNameLastName"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ProfileEditUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="25dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/custom_person_outline"
+                android:drawablePadding="12dp"
+                android:hint="Kullanıcı Adı"
+
+                android:inputType="text"
+                android:padding="12dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColorHint="@color/darkgray" />
+
+           <LinearLayout
+               android:layout_below="@+id/ProfileEditUserName"
+               android:layout_centerHorizontal="true"
+               android:id="@+id/ProfileEditPasswordReset"
+               android:layout_marginTop="15dp"
+               android:layout_marginBottom="25dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center">
+               <ImageView
+                   android:layout_gravity="center"
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:src="@drawable/ic_password"/>
+               <TextView
+                   android:text="Şifre Değiştir"
+                   android:src="@drawable/ic_closed"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+           </LinearLayout>
+                <ImageButton
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/ProfileEditClose"
+                    android:padding="10dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:background="@drawable/custom_close_button"
+                    android:src="@drawable/ic_closed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+</LinearLayout>

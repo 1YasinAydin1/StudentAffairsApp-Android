@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>		- custom_input
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+            <corners android:radius="24dp"/>
+            <stroke android:color="@color/lightgray" android:width="1dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true" >
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+            <corners android:radius="24dp"/>
+            <stroke android:color="@color/lightgray" android:width="1dp"/>
+        </shape>
+    </item>
+</selector>
+
+<?xml version="1.0" encoding="utf-8"?>	- custom_button
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#83B5E3"/>
+            <corners android:radius="10dp"/>
+            <stroke android:color="@color/logoColor" android:width="2dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true" >
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/logoColor"/>
+            <corners android:radius="12dp"/>
+            <stroke android:color="#2D608F" android:width="1dp"/>
+        </shape>
+    </item>
+</selector>
